@@ -78,37 +78,38 @@ class Weather extends Component {
       <div className="weather-page-content">
         <h1 className="weather-h1">Tom's Weather Forecast</h1>
         <div className="weather-text">
-        <form onSubmit={this.handleSubmit}>
-          <label class="weather-label">
-            Enter your zip code:{" "}
-            <input type="text" onChange={this.handleChange} />
-          </label>
-          <br />
-          <br />
-          <input
-            type="submit"
-            class="weather-submit"
-            value="Get my forecast!"
-          />
-          <br />
-          <br />
-          <p className="weather-result">
-            <div className="weather-icon-container">{weatherIcon}</div>
-            {this.state.error && <span>{this.state.error}</span>}
-            {this.state.temperature && (
-              <span>
-                The current temperature in {this.state.city} is{" "}
-                {this.state.temperature}°F.
-                <br /> There is a possible high of {this.state.high}°F and a low
-                of {this.state.low}°F.
-                <br />
-                The last reported description of the weather was:{" "}
-                {this.state.description}.
-              </span>
-            )}
-          </p>
-        </form>
-      </div></div>
+          <form onSubmit={this.handleSubmit}>
+            <label className="weather-label">
+              Enter your zip code:{" "}
+              <input type="text" onChange={this.handleChange} />
+            </label>
+            <br />
+            <br />
+            <input
+              type="submit"
+              className="weather-submit"
+              value="Get my forecast!"
+            />
+            <br />
+            <br />
+            <p className="weather-result">
+              <div className="weather-icon-container">{weatherIcon}</div>
+              {this.state.error && <span>{this.state.error}</span>}
+              {this.state.temperature && (
+                <span>
+                  The current temperature in {this.state.city} is{" "}
+                  {this.state.temperature}°F.
+                  <br /> There is a possible high of {this.state.high}°F and a
+                  low of {this.state.low}°F.
+                  <br />
+                  The last reported description of the weather was:{" "}
+                  {this.state.description}.
+                </span>
+              )}
+            </p>
+          </form>
+        </div>
+      </div>
     );
   }
 }
