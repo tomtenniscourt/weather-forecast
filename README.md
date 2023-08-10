@@ -10,7 +10,8 @@ This React application fetches weather data based on a user's input of a zip cod
 4. Run `npm start` to start the development server.
 5. Open your web browser and navigate to `http://localhost:3000` to use the app.
 
-## Components
+## Screenshot
+<img width="794" alt="Screenshot 2023-08-10 at 12 32 00" src="https://github.com/tomtenniscourt/weather-forecast/assets/127535435/7838a242-9fdf-4480-bd75-6f2c347ad173">
 
 ### `Weather`
 
